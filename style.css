@@ -1,5 +1,51 @@
-.col.s10.search-nav {
-  margin-left: 8.33%;
-  border: 1px solid black;
-  border-radius: 15px;
+body {
+  font-family: 'Rubik', sans-serif;
+}
+
+.header {
+  background: url('/images/pattern-bg.png');
+  height: 30vh;
+}
+
+.row.center-align {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  color: white;
+  width: 50%;
+}
+
+div.input-field {
+  background-color: white;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  text-decoration: none;
+  border: none;
+  width: 90%;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#search {
+  margin: 0;
+  border: 0;
+}
+
+#btn {
+  height: 44px;
+  box-shadow: none;
+  border: none;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background: black;
+}
+
+.material-icons.submit {
+  font-weight: 900;
+  font-size: 35px;
 }
