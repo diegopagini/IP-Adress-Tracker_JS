@@ -1,9 +1,15 @@
+:root {
+  --dark-gray: hsl(0, 0%, 59%);
+}
+
 body {
   font-family: 'Rubik', sans-serif;
 }
 
 .header {
   background: url('/images/pattern-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 30vh;
 }
 
@@ -34,10 +40,12 @@ div.input-field {
 #search {
   margin: 0;
   border: 0;
+  margin-left: 30px;
+  font-size: 20px;
 }
 
 #btn {
-  height: 44px;
+  height: 45px;
   box-shadow: none;
   border: none;
   border-top-right-radius: 15px;
@@ -48,4 +56,65 @@ div.input-field {
 .material-icons.submit {
   font-weight: 900;
   font-size: 35px;
+}
+
+.table {
+  position: relative;
+  top: -55px;
+  z-index: 100;
+  background-color: white;
+  border-radius: 35px;
+}
+
+.table tr {
+  border: none;
+}
+
+.table-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--dark-gray);
+  font-weight: 400;
+}
+
+.value {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+  .row.center-align {
+    width: 80%;
+  }
+  .table tr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #search {
+    font-size: 14px;
+  }
+
+  .value {
+    height: 10px;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  #search {
+    margin-left: 10px;
+  }
+
+  .td {
+    padding: 0;
+  }
 }

@@ -28,7 +28,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
 
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="style.css" />
 
@@ -40,22 +43,54 @@
       <div>
         <div class="row center-align">
           <div class="col s12 m12">
-            <h2>IP Adress Tracker</h2>
+            <h2 class="title">IP Adress Tracker</h2>
           </div>
           <div class="col s12 m12">
             <form class="form">
               <div class="input-field">
-                <input id="search" type="search" required>
+                <input
+                  id="search"
+                  type="search"
+                  required
+                  placeholder="Search for any IP adress or domain"
+                />
                 <label class="label-icon" for="search"></label>
               </div>
-                  <button class="btn" id="btn">
-                    <i class="material-icons submit valign-wrapper">chevron_right</i>
-                  </button>
-                </form>
+              <button class="btn" id="btn">
+                <i class="material-icons submit valign-wrapper"
+                  >chevron_right</i
+                >
+              </button>
+            </form>
           </div>
         </div>
       </div>
     </header>
+
+    <main>
+      <div class="container">
+        <table class="table z-depth-2">
+          <tr>
+            <td class="td">
+              <h5 class="table-title">IP ADRESS</h5>
+              <h4 class="value">IP ADRESS</h4>
+            </td>
+            <td class="td">
+              <h5 class="table-title">LOCATION</h5>
+              <h4 class="value">LOCATION</h4>
+            </td>
+            <td class="td">
+              <h5 class="table-title">TIMEZONE</h5>
+              <h4 class="value">TIMEZONE</h4>
+            </td>
+            <td class="td">
+              <h5 class="table-title">ISP</h5>
+              <h4 class="value">ISP</h4>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
