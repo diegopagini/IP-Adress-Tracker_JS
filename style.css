@@ -7,7 +7,7 @@ body {
 }
 
 .header {
-  background: url('/images/pattern-bg.png');
+  background: url('./images/pattern-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
   height: 30vh;
